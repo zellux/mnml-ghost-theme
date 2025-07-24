@@ -1053,7 +1053,8 @@ nav button {
 }
 
 .post-tags:before,
-.post-date:before{
+.post-date:before,
+.post-edit:before{
   content: " • ";
 }
 
