@@ -10,6 +10,11 @@
         <h1 class="page-title typl8-gamma"> {{@site.title}}</h1>
         <h2 class="page-description typl8-epsilon">{{@site.description}}</h2>
     </div>
+
+    {{#if @site.navigation}}
+      {{>menu}}
+    {{/if}}
+
   </nav>
 </header>
 <div hidden class="notification-area" id="notifications">

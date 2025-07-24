@@ -719,6 +719,7 @@ aside.note:before{
   max-width:850px !important;
   padding: relative;
   margin: 0 auto;
+  position: relative;
 }
 
 .blog-logo img {
@@ -918,7 +919,7 @@ nav button {
 }
 
 #menu-trigger:checked ~ nav{
-  top:-.825rem;
+  top:-4.825rem;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -1872,6 +1873,10 @@ top: -35px;
     /*background-position: center;*/
   }
 
+  #menu-trigger:checked ~ nav {
+    top: -10.5rem;
+  }
+
   hr {
     margin: 2.4em 0;
   }
@@ -2032,7 +2037,7 @@ top: -35px;
 
   .home-template .open-menu,
   .paged .open-menu{
-    top:2.457rem;
+    top:0.457rem;
 
   }
 
