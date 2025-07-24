@@ -1,0 +1,35 @@
+{{#contentFor "body_class"}}post-template{{/contentFor}}
+
+{{!< default}}
+{{!--
+This is a custom template for a route defined in routes.yaml.
+It lists all posts on a dedicated /archive/ page.
+--}}
+{{>content-header}}
+
+<main id="site-main" class="site-main">
+    <article class="{{post_class}}">
+
+    <header class="post-header">
+        {{!-- The title will be provided by routes.yaml --}}
+        <h1 class="post-title">Archive</h1>
+    </header>
+
+    <section class="post-content">
+        {{!-- The #get helper fetches all our posts --}}
+        {{#get "posts" limit="all" fields="title,slug,url,published_at" order="published_at desc"}}
+        <div class="post-archive-list">
+            {{#foreach posts}}
+            <div class="post-archive-item">
+                <a href="{{@site.url}}/{{slug}}/" class="post-archive-item-title">{{title}}</a>
+                <time class="post-archive-item-date" datetime="{{date published_at format="YYYY-MM-DD"}}">
+                    {{date published_at format="MMMM D, YYYY"}}
+                </time>
+            </div>
+            {{/foreach}}
+        </div>
+        {{/get}}
+    </section>
+
+</article>
+</main>
