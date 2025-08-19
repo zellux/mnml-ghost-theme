@@ -983,20 +983,7 @@ nav button {
   max-width:250px;
 }
 
-.post-content  > p:first-child::first-letter {
-  font-size:4rem;
-  margin:.55rem .55rem 0 0;
-  line-height: 1;
-  float:left;
-  color:slategray;
-  font-weight: 900;
-  -webkit-margin-before: 0;
-  -webkit-margin-after: -.55rem;
-/*
-  position: absolute;
-  top:50px;
-*/
-}
+
 
 .post-content > p:first-child::first-line {
   -moz-font-feature-settings: "smcp=1";
@@ -1891,10 +1878,10 @@ top: -35px;
     display: none;
   }
 
-    .post-content > p:first-child::first-letter {
+    /* .post-content > p:first-child::first-letter {
     font-size:5rem;
     line-height: .965;
-  }
+  } */
 
 
   .post .kg-width-wide {
@@ -2155,12 +2142,6 @@ top: -35px;
   .author-meta li:before{
       display: none;
   }
-
-  .post-content > p:first-child::first-letter {
-    font-size:6.5rem;
-    line-height: .965;
-  }
-
 
   .kg-bookmark-icon {
     width: 16px;
