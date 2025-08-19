@@ -17,11 +17,18 @@ It lists all posts on a dedicated /archive/ page.
 
     <section class="post-content">
         {{!-- The #get helper fetches all our posts --}}
-        {{#get "posts" limit="all" fields="title,slug,url,published_at" order="published_at desc"}}
+        {{#get "posts" limit="all" fields="title,slug,url,published_at" include="tags" order="published_at desc"}}
         <div class="post-archive-list">
             {{#foreach posts}}
             <div class="post-archive-item">
                 <a href="{{@site.url}}/{{slug}}/" class="post-archive-item-title">{{title}}</a>
+                {{#if tags}}
+                <span class="post-archive-item-tags">
+                    {{#foreach tags}}
+                        <span class="post-archive-tag">{{name}}</span>
+                    {{/foreach}}
+                </span>
+                {{/if}}
                 <time class="post-archive-item-date" datetime="{{date published_at format="YYYY-MM-DD"}}">
                     {{date published_at format="MMMM D, YYYY"}}
                 </time>
