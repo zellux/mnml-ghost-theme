@@ -1,105 +1,293 @@
 /* ==========================================================================
-   0. Normalize.css v2.1.3 | MIT License | git.io/normalize | (minified)
+   0. Normalize.css v2.1.3 | MIT License | git.io/normalize
    ========================================================================== */
-article, aside, details,
-figcaption, figure,
-footer, header, hgroup,
-main, nav, section,
-summary { display: block; }
-audio, canvas, video { display: inline-block; }
-audio:not([controls]) { display: none; height: 0; }
-[hidden], template { display: none; }
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { 
+  display: block; 
+}
+
+audio, canvas, video { 
+  display: inline-block; 
+}
+
+audio:not([controls]) { 
+  display: none; 
+  height: 0; 
+}
+
+[hidden], template { 
+  display: none; 
+}
+
 html {
-   font-family: sans-serif;
-   -ms-text-size-adjust: 100%;
-   -webkit-text-size-adjust: 100%;
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
-body { margin: 0; }
-a { background: transparent; }
-a:focus { outline: thin dotted; }
-a:active, a:hover { outline: 0; }
-h1 { font-size: 2em; margin: 0.67em 0; }
-/*abbr[title] { border-bottom: 1px dotted; }*/
-b, strong { font-weight: 500; }
-dfn { font-style: italic; }
+
+body { 
+  margin: 0; 
+}
+
+a { 
+  background: transparent; 
+}
+
+a:focus { 
+  outline: thin dotted; 
+}
+
+a:active, a:hover { 
+  outline: 0; 
+}
+
+h1 { 
+  font-size: 2em; 
+  margin: 0.67em 0; 
+}
+
+b, strong { 
+  font-weight: 500; 
+}
+
+dfn { 
+  font-style: italic; 
+}
+
 hr {
-   -moz-box-sizing: content-box;
-   box-sizing: content-box;
-   height: 0;
+  box-sizing: content-box;
+  height: 0;
 }
-mark { background: #FF0; color: #000; }
-code, kbd, pre,
-samp { font-family: monospace, serif; font-size: 1em; }
-pre { white-space: pre-wrap; }
-q { quotes: "\201C" "\201D" "\2018" "\2019"; }
-small { font-size: 80%; }
+
+mark { 
+  background: #FF0; 
+  color: #000; 
+}
+
+code, kbd, pre, samp { 
+  font-family: monospace, serif; 
+  font-size: 1em; 
+}
+
+pre { 
+  white-space: pre-wrap; 
+}
+
+q { 
+  quotes: "\201C" "\201D" "\2018" "\2019"; 
+}
+
+small { 
+  font-size: 80%; 
+}
+
 sub, sup {
-   font-size: 75%;
-   line-height: 0;
-   position: relative;
-   vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
 }
-sup { top: -0.5em; }
-sub { bottom: -0.25em; }
-img { border: 0; }
-svg:not(:root) { overflow: hidden; }
-figure { margin: 0; }
+
+sup { 
+  top: -0.5em; 
+}
+
+sub { 
+  bottom: -0.25em; 
+}
+
+img { 
+  border: 0; 
+}
+
+svg:not(:root) { 
+  overflow: hidden; 
+}
+
+figure { 
+  margin: 0; 
+}
+
 fieldset {
-   border: 1px solid #c0c0c0;
-   margin: 0 2px;
-   padding: 0.35em 0.625em 0.75em;
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
 }
-legend { border: 0; padding: 0; }
-button, input, select,
-textarea { font-family: inherit; font-size: 100%; margin: 0; }
-button, input { line-height: normal; }
-button, select { text-transform: none; }
-button, html input[type="button"],
-input[type="reset"], input[type="submit"] {
-   -webkit-appearance: button;
-   cursor: pointer;
+
+legend { 
+  border: 0; 
+  padding: 0; 
 }
-button[disabled], html input[disabled] { cursor: default; }
-input[type="checkbox"],
-input[type="radio"] { box-sizing: border-box; padding: 0; }
+
+button, input, select, textarea { 
+  font-family: inherit; 
+  font-size: 100%; 
+  margin: 0; 
+}
+
+button, input { 
+  line-height: normal; 
+}
+
+button, select { 
+  text-transform: none; 
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], html input[disabled] { 
+  cursor: default; 
+}
+
+input[type="checkbox"], input[type="radio"] { 
+  box-sizing: border-box; 
+  padding: 0; 
+}
+
 input[type="search"] {
-   -webkit-appearance: textfield;
-   -moz-box-sizing: content-box;
-   -webkit-box-sizing: content-box;
-   box-sizing: content-box;
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
 }
+
 input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
-button::-moz-focus-inner,
-input::-moz-focus-inner { border: 0; padding: 0; }
-textarea { overflow: auto; vertical-align: top; }
-table { border-collapse: collapse; border-spacing: 0; }
+input[type="search"]::-webkit-search-decoration { 
+  -webkit-appearance: none; 
+}
 
+button::-moz-focus-inner, input::-moz-focus-inner { 
+  border: 0; 
+  padding: 0; 
+}
 
+textarea { 
+  overflow: auto; 
+  vertical-align: top; 
+}
 
-/*!
-TYPEPLATE : STARTER KIT
-URL ........... http://typeplate.com
-VERSION ....... 2.0.0
-Github ........ https://github.com/typeplate/starter-kit
-AUTHORS ....... Dennis Gaebel (@gryghostvisuals) & Zachary Kain (@zakkain)
-LICENSE ....... Creative Commmons Attribution 3.0 (http://creativecommons.org/licenses/by/3.0)
-LICENSE URL ... https://github.com/typeplate/starter-kit/blob/master/license.txt
-*/@font-face{font-family:Ampersand;src:local("Georgia"),local("Garamond"),local("Palatino"),local("Book Antiqua");unicode-range:U+0026}@font-face{font-family:Ampersand;src:local("Georgia");unicode-range:U+270C}.typl8-ampersand{font-family:Ampersand,Verdana,sans-serif}.typl8-breakword{word-wrap:break-word}.typl8-normal-wrap{word-wrap:normal}.typl8-inherit-wrap{word-wrap:inherit}.typl8-font-feature--smcp{-webkit-font-feature-settings:"smcp";-moz-font-feature-settings:"smcp";-ms-font-feature-settings:"smcp";font-feature-settings:"smcp"}.typl8-font-feature--onum{-webkit-font-feature-settings:'onum';-moz-font-feature-settings:'onum';-ms-font-feature-settings:'onum';font-feature-settings:'onum'}.typl8-drop-cap:first-letter{float:left;margin:10px 10px 0 0;padding:0 20px;font-size:4em;font-family:inherit;line-height:1;text-indent:0;background:0 0;color:inherit}p+.typl8-drop-cap{text-indent:0;margin-top:0}html{font:400 112.5%/1.65 serif}body{-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto;word-wrap:break-word;color:#444}small{font-size:65%}h1,h2,h3,h4,h5,h6{line-height:1;margin-top:0;text-rendering:optimizeLegibility;color:#222}.typl8-tera{font-size:117px;font-size:6.5rem;margin-bottom:.25385rem}.typl8-giga{font-size:90px;font-size:5rem;margin-bottom:.33rem}.typl8-mega{font-size:72px;font-size:4rem;margin-bottom:.4125rem}.typl8-alpha,h1{font-size:60px;font-size:3.33333rem;margin-bottom:.495rem}.typl8-beta,h2{font-size:48px;font-size:2.6667rem;margin-bottom:.61875rem}.typl8-gamma,.post-content h1,.post-content h2,h3{font-size:36px;font-size:2rem;margin-bottom:.825rem}.typl8-delta,h4{font-size:24px;font-size:1.3333333333333333rem;margin-bottom:1.2375rem}.typl8-epsilon,h5{font-size:21px;font-size:1.16667rem;margin-bottom:1.41429rem}.typl8-zeta,h6{font-size:18px;font-size:1rem;margin-bottom:1.65rem}p{margin:auto auto 1.65em}p+p{}abbr,acronym,blockquote,code,input,kbd,q,samp,var{-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre code{word-wrap:normal;white-space:-moz-pre-wrap;white-space:pre-wrap}pre{white-space:pre}code{white-space:pre;font-family:monospace}abbr{-webkit-font-variant:small-caps;-moz-font-variant:small-caps;-ms-font-variant:small-caps;font-variant:small-caps;font-weight:600;text-transform:lowercase;color:gray}abbr[title]:hover{cursor:help}.typl8-lining dd,.typl8-lining dt{display:inline;margin:0}.typl8-lining dd+dt:before,.typl8-lining dt+dt:before{content:"\A";white-space:pre}.typl8-lining dd+dd:before{content:", "}.typl8-lining dd:before{content:": ";margin-left:-.2em}.typl8-dictionary-style dt{display:inline;counter-reset:definitions}.typl8-dictionary-style dt+dt:before{content:", ";margin-left:-.2em}.typl8-dictionary-style dd{display:block;counter-increment:definitions}.typl8-dictionary-style dd:before{content:counter(definitions,decimal) ". "}.typl8-blockquote p:last-of-type{margin-bottom:-.825em}.typl8-blockquote+figcaption{display:block;font-size:inherit;text-align:right}.typl8-blockquote+figcaption:before{content:"-"}.typl8-pull-quote{position:relative;padding:1em}.typl8-pull-quote:after,.typl8-pull-quote:before{height:1em;opacity:.15;position:absolute;font-size:4em;color:#dc976e}.typl8-pull-quote:before{content:'“';top:0;left:0}.typl8-pull-quote:after{content:'”';bottom:0;right:0}
+table { 
+  border-collapse: collapse; 
+  border-spacing: 0; 
+}
 
+/* ==========================================================================
+   1. Typography - Clean typography setup
+   ========================================================================== */
+html {
+  font: 400 112.5%/1.65 serif;
+}
 
+body {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  word-wrap: break-word;
+  color: #444;
+}
 
+small {
+  font-size: 65%;
+}
 
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+  margin-top: 0;
+  text-rendering: optimizeLegibility;
+  color: #222;
+}
+
+.typl8-tera {
+  font-size: 6.5rem;
+  margin-bottom: 0.25385rem;
+}
+
+.typl8-giga {
+  font-size: 5rem;
+  margin-bottom: 0.33rem;
+}
+
+.typl8-mega {
+  font-size: 4rem;
+  margin-bottom: 0.4125rem;
+}
+
+.typl8-alpha, h1 {
+  font-size: 3.33333rem;
+  margin-bottom: 0.495rem;
+}
+
+.typl8-beta, h2 {
+  font-size: 2.6667rem;
+  margin-bottom: 0.61875rem;
+}
+
+.typl8-gamma, .post-content h1, .post-content h2, h3 {
+  font-size: 2rem;
+  margin-bottom: 0.825rem;
+}
+
+.typl8-delta, h4 {
+  font-size: 1.3333333333333333rem;
+  margin-bottom: 1.2375rem;
+}
+
+.typl8-epsilon, h5 {
+  font-size: 1.16667rem;
+  margin-bottom: 1.41429rem;
+}
+
+.typl8-zeta, h6 {
+  font-size: 1rem;
+  margin-bottom: 1.65rem;
+}
+
+p {
+  margin: auto auto 1.65em;
+}
+
+abbr, acronym, blockquote, code, input, kbd, q, samp, var {
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre code {
+  word-wrap: normal;
+  white-space: pre-wrap;
+}
+
+pre {
+  white-space: pre;
+}
+
+code {
+  white-space: pre;
+  font-family: monospace;
+}
+
+abbr {
+  font-variant: small-caps;
+  font-weight: 600;
+  text-transform: lowercase;
+  color: gray;
+}
+
+abbr[title]:hover {
+  cursor: help;
+}
 
 /* ==========================================================================
    2. General - Setting up some base styles
    ========================================================================== */
 
-* + *{
-  margin-top:.835rem;
+* + * {
+  margin-top: 0.835rem;
 }
 
-.math * + *{
+.math * + * {
   margin-top: 0;
 }
 
@@ -108,126 +296,115 @@ html {
 }
 
 body {
-    font-family: "Source Serif Pro", Georgia, serif;
-    font-family: var(--gh-font-body);    
-    color: #333;
-    font-size:21px;
-    background: #fdfdfd;
-    /* A slight hack to prevent full-bleed images from creating a scrollbar */
-    overflow-x: hidden;
-
-    -webkit-hyphens: auto;
-       -moz-hyphens: auto;
-        -ms-hyphens: auto;
-            hyphens: auto;
+  font-family: "Source Serif Pro", Georgia, serif;
+  font-family: var(--gh-font-body);    
+  color: #333;
+  font-size: 21px;
+  background: #fdfdfd;
+  /* A slight hack to prevent full-bleed images from creating a scrollbar */
+  overflow-x: hidden;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 ::-moz-selection {
-    background: slategray;
-    color:white;
+  background: slategray;
+  color: white;
 }
 
 ::selection {
-    background: slategray;
-    color:white
+  background: slategray;
+  color: white;
 }
 
 main {
   min-height: calc(100vh - 18rem); /* Keep the footer where it belongs */
 }
 
-h1, h2, h3,
-h4, h5, h6,
+h1, h2, h3, h4, h5, h6,
 main-nav a,
 .post-meta,
 .site-footer,
 .pagination,
 .sans-serif,
 .kg-bookmark-container {
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
-    font-family: var(--gh-font-heading);  
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: var(--gh-font-heading);  
 }
 
 h4, h5, h6,
-.older-posts, .newer-posts{
+.older-posts, .newer-posts {
   text-transform: uppercase;
   font-weight: 900;
 }
 
-h4{
-  letter-spacing: .055rem !important;
+h4 {
+  letter-spacing: 0.055rem !important;
 }
 
 a {
   color: #dd4814;
   transition: color ease 0.3s;
 }
-a:hover, a:active, a.active{
+
+a:hover, a:active, a.active {
   color: orange;
 }
 
 em, i {
-/*
-  Yeah, this is a hack.
-  Real italics are coming to Source Serif Pro, but I couldn’t wait to use it.
-*/
+  /*
+    Yeah, this is a hack.
+    Real italics are coming to Source Serif Pro, but I couldn't wait to use it.
+  */
   font-family: "Alegreya";
   font-family: var(--gh-font-body);
   font-style: italic;
 }
 
-strong, bold, b{
+strong, bold, b {
   font-weight: 700;
 }
 
-/* ================= TRADITIONAL PARAGRAPHING ======================*/
+/* ================= TRADITIONAL PARAGRAPHING ====================== */
 
 /* These styles set up book style paragraphing, and make the spacing work.
-   Unfortunatly, you can’t use p + p with inline elements (like thumbanils).
+   Unfortunately, you can't use p + p with inline elements (like thumbnails).
 
    Comment this block out if you want your paragraphs marked by space rather
    than indent. */
 
-
 .post-content > p + p,
 .post-content .thumb + p,
-.post-content aside + p{
-  text-indent:1.65em;
+.post-content aside + p {
+  text-indent: 1.65em;
 }
 
-.post-content p{
-  margin-bottom:0em;
+.post-content p {
+  margin-bottom: 0em;
   -webkit-margin-after: 0em;
 }
 
-
 .post-content h1,
 .post-content h2,
-.post-content h3{
+.post-content h3 {
   margin-top: 2.857rem;
   margin-bottom: 1.65rem;
 }
 
 .post-content h4,
 .post-content h5,
-.post-content h6{
+.post-content h6 {
   margin-top: 3.3rem;
   margin-bottom: 1.1rem;
 }
 
-
-/* END OF TRADITIONAL PARAGRAPH STYLES*/
-
+/* END OF TRADITIONAL PARAGRAPH STYLES */
 
 ol, ul {
   padding-left: 0;
 }
-
-/*
-.post-content li{
-  margin: .5em 0;
-}
-*/
 
 ol ol, ul ul,
 ul ol, ol ul {
@@ -235,23 +412,23 @@ ul ol, ol ul {
   padding-left: 2.457rem;
 }
 
-input, textarea{
-  border-radius:0;
+input, textarea {
+  border-radius: 0;
   min-width: 55%;
-  border:2px solid slategray;
-  padding:.55rem;
+  border: 2px solid slategray;
+  padding: 0.55rem;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-family: var(--gh-font-body);
-  margin: .55rem auto;
+  margin: 0.55rem auto;
   box-sizing: border-box;
 }
 
-input:focus, textarea:focus{
-  border:2px solid #dd4814;
+input:focus, textarea:focus {
+  border: 2px solid #dd4814;
 }
 
 li {
-  margin-top: .25rem;
+  margin-top: 0.25rem;
 }
 
 dl dt {
@@ -263,16 +440,15 @@ dl dt {
   text-overflow: ellipsis;
   white-space: nowrap;
   font-weight: 700;
-  margin-bottom:1.1rem;
+  margin-bottom: 1.1rem;
 }
 
 dl dd {
   margin-left: 200px;
-  margin-bottom:1.1rem
+  margin-bottom: 1.1rem;
 }
 
-
-hr{
+hr {
   display: block;
   height: 1px;
   border: 0;
@@ -282,7 +458,6 @@ hr{
   text-align: center;
 }
 
-
 hr:after {
   display: block;
   content: "";
@@ -290,12 +465,10 @@ hr:after {
   height: 7px;
   border: #e0e0e0 1px solid;
   position: relative;
-  bottom: .2em;
+  bottom: 0.2em;
   left: 50%;
   margin-left: -5px;
   background: #fdfdfd;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
   border-radius: 100%;
   box-shadow: #fdfdfd 0 0 0 5px;
 }
@@ -305,7 +478,6 @@ hr.plain-hr:after {
 }
 
 blockquote {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 1.65rem 0 1.65rem -1.8rem;
   padding: 0 0 0 1.65rem;
@@ -322,19 +494,23 @@ blockquote p {
 blockquote small {
   display: inline-block;
   margin: 0.8rem 0 0.8em 1.65rem;
-  font-size:.825rem;
+  font-size: 0.825rem;
   color: #CCC;
 }
 
-blockquote small:before { content: "\2014 \00A0"; }
+blockquote small:before { 
+  content: "\2014 \00A0"; 
+}
 
 blockquote cite {
   font-weight: 700;
 }
 
-blockquote cite a { font-weight: normal; }
+blockquote cite a { 
+  font-weight: normal; 
+}
 
-aside em{
+aside em {
   font-family: inherit;
 }
 
@@ -353,7 +529,6 @@ code, tt {
 }
 
 pre {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   border: #E3EDF3 1px solid;
   width: 100%;
@@ -366,17 +541,17 @@ pre {
   border-radius: 3px;
 }
 
-/* These override prism’s default codeblock styles to make them match*/
-pre[class*="language-"], .token.operator{
+/* These override prism's default codeblock styles to make them match */
+pre[class*="language-"], .token.operator {
   background: #F7FAFB !important;
 }
 
-pre[class*="language-"]{
+pre[class*="language-"] {
   padding: 10px !important;
   margin: 0 0 1.7rem 0 !important;
 }
 
-code[class*="language-"]{
+code[class*="language-"] {
   font-family: Inconsolata, monospace, sans-serif !important;
   text-shadow: none !important;
   color: #333 !important;
@@ -384,7 +559,6 @@ code[class*="language-"]{
 
 pre code, tt {
   font-size: inherit;
-  white-space: -moz-pre-wrap;
   white-space: pre-wrap;
   background: transparent;
   border: none;
@@ -402,13 +576,10 @@ kbd {
   font-weight: 700;
   background: #F4F4F4;
   border-radius: 4px;
-  box-shadow:
-      0 1px 0 rgba(0, 0, 0, 0.2),
-      0 1px 0 0 #fff inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 0 #fff inset;
 }
 
 table {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 1.7em 0;
   width: 100%;
@@ -421,14 +592,16 @@ table {
 table th,
 table td {
   padding: 8px;
-  font-size:.857em;
+  font-size: 0.857em;
   line-height: 1.65em;
   text-align: left;
   vertical-align: top;
   border-top: #EFEFEF 1px solid;
 }
 
-table th { color: #000; }
+table th { 
+  color: #000; 
+}
 
 table caption + thead tr:first-child th,
 table caption + thead tr:first-child td,
@@ -439,9 +612,13 @@ table thead:first-child tr:first-child td {
   border-top: 0;
 }
 
-table tbody + tbody { border-top: #EFEFEF 2px solid; }
+table tbody + tbody { 
+  border-top: #EFEFEF 2px solid; 
+}
 
-table table table { background-color: #FFF; }
+table table table { 
+  background-color: #FFF; 
+}
 
 table tbody > tr:nth-child(odd) > td,
 table tbody > tr:nth-child(odd) > th {
@@ -458,7 +635,7 @@ table.plain tbody > tr:nth-child(odd) > th {
   height: 0;
   margin: 1rem 0;
   padding-bottom: 56.25%; /* 16:9 */
-  padding-bottom: calc(var(--aspect-ratio, .5625) * 100%);
+  padding-bottom: calc(var(--aspect-ratio, 0.5625) * 100%);
 }
 
 .video-wrapper iframe,
@@ -482,8 +659,14 @@ table.plain tbody > tr:nth-child(odd) > th {
   content: " ";
   display: table;
 }
-.clearfix:after { clear: both; }
-.clearfix { *zoom: 1; }
+
+.clearfix:after { 
+  clear: both; 
+}
+
+.clearfix { 
+  *zoom: 1; 
+}
 
 /* Hides your shame */
 .hidden {
@@ -492,55 +675,46 @@ table.plain tbody > tr:nth-child(odd) > th {
   display: none;
 }
 
-.center-text{
+.center-text {
   text-align: center;
 }
 
-.m0a{
+.m0a {
   margin: 0 auto;
 }
 
-.tdn{
+.tdn {
   text-decoration: none;
 }
 
-.nmt{
+.nmt {
   margin-top: 0;
 }
 
-.lh-2-3{
+.lh-2-3 {
   line-height: 1.1;
 }
 
-.sc{
-  -moz-font-feature-settings: "smcp=1";
-  -moz-font-feature-settings: "smcp";
-  -ms-font-feature-settings: "smcp";
-  -webkit-font-feature-settings: "smcp";
-  -o-font-feature-settings: "smcp";
+.sc {
   font-feature-settings: "smcp";
   font-variant: small-caps;
 }
 
 .menu-transition {
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
-.flex-container{
+.flex-container {
   display: flex;
 }
 
-.flex-container--center{
+.flex-container--center {
   align-items: center;
   justify-content: center;
 }
 
-.flex-child{
-  align-self:center;
+.flex-child {
+  align-self: center;
 }
 
 /* Creates a responsive wrapper that makes our content scale nicely */
@@ -550,134 +724,130 @@ table.plain tbody > tr:nth-child(odd) > th {
   margin: 0 auto;
 }
 
-/* This is the class that KaTeX looks for an typesets the contents of */
-.math{
+/* This is the class that KaTeX looks for and typesets the contents of */
+.math {
   text-align: center;
-  font-size:1.65rem;
-  padding:.55rem;
+  font-size: 1.65rem;
+  padding: 0.55rem;
   max-width: 100%;
   overflow: auto;
 }
 
-/* Makes for a nice small, responsive image that floats right*/
-.thumb{
+/* Makes for a nice small, responsive image that floats right */
+.thumb {
   width: 100%;
   max-width: 225px;
-  margin: .55rem !important;
-  float:right;
+  margin: 0.55rem !important;
+  float: right;
   line-height: 1;
 }
 
-.thumb img.full-img{
+.thumb img.full-img {
   margin: 0 auto !important;
   width: 100%;
 }
 
-.pullquote--pulled, .pull, .p-quote:after{
+.pullquote--pulled, .pull, .p-quote:after {
   display: inline-block;
-  float:right;
-  border:none;
+  float: right;
+  border: none;
   padding: 0;
   width: 40%;
   text-indent: 1.65rem;
   margin: 1.1rem;
   font-style: italic;
-  color:slategray;
+  color: slategray;
   font-family: "Alegreya", Georgia, serif;
   font-family: var(--gh-font-body);
   -webkit-hyphens: auto;
-     -moz-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
-.pullquote--pulled:before, .pull:before, .p-quote:before{
-  content:"“";
+.pullquote--pulled:before, .pull:before, .p-quote:before {
+  content: """;
   display: inline-block;
   width: 0;
   font-size: 5rem;
   position: relative;
   top: 2.1rem;
-  right:4rem;
-  color:orange;
+  right: 4rem;
+  color: orange;
   line-height: 0;
 }
 
-.p-quote:before{
-  float:right;
+.p-quote:before {
+  float: right;
   width: 40%;
-  top:3rem;
-  right:3.3rem;
+  top: 3rem;
+  right: 3.3rem;
   font-family: "Alegreya", Georgia, serif;
   font-family: var(--gh-font-heading);
 }
 
-.p-quote:after{
+.p-quote:after {
   content: attr(data-content);
 }
 
-aside{
+aside {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-family: var(--gh-font-body);
   width: 40%;
-  float:right;
+  float: right;
   line-height: 1.65;
   background-color: #fff;
-  padding:1.1rem;
-  margin:1.65rem;
+  padding: 1.1rem;
+  margin: 1.65rem;
   margin-right: 0;
-  font-size:1rem;
-  border:1px solid #eee;
+  font-size: 1rem;
+  border: 1px solid #eee;
 }
 
-aside.note:before{
+aside.note:before {
   position: relative;
   font-family: "Source Serif Pro", Georgia, serif;
   font-family: var(--gh-font-heading);
   font-weight: 900;
-  color:  #ccc;
-  bottom:.55rem;
-  right:1.65rem;
+  color: #ccc;
+  bottom: 0.55rem;
+  right: 1.65rem;
   content: "*";
-  font-size:2.6667rem;
+  font-size: 2.6667rem;
   line-height: 0;
   float: left;
 }
 
-.btn, button, input[type="button"]{
-  color:white;
+.btn, button, input[type="button"] {
+  color: white;
   background-color: #dd4814;
-  background: -moz-linear-gradient(top, #dd4814 0%, #c23202 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, #dd4814), color-stop(100%, #c23202));
-  background: -webkit-linear-gradient(top, #dd4814 0%, #c23202 100%);
-  background: -o-linear-gradient(top, #dd4814 0%, #c23202 100%);
-  background: -ms-linear-gradient(top, #dd4814 0%, #c23202 100%);
   background: linear-gradient(to bottom, #dd4814 0%, #c23202 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd4814', endColorstr='#c23202', GradientType=0 );
-  padding: .55rem 1.1rem;
+  padding: 0.55rem 1.1rem;
   text-indent: 0;
   text-decoration: none;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-family: var(--gh-font-body);
   text-transform: uppercase;
-  margin:.5em auto !important;
+  margin: 0.5em auto !important;
   display: inline-block;
   text-align: center;
   font-weight: 900;
   margin: 0 auto;
   border-radius: 2px;
-  border:1px solid #990000;
+  border: 1px solid #990000;
 }
 
-.btn:active, .btn:hover,  .btn.active, button:active, button:hover, input[type=button]:active, input[type="button"]:hover{
-  color:white;
+.btn:active, .btn:hover, .btn.active, 
+button:active, button:hover, 
+input[type=button]:active, input[type="button"]:hover {
+  color: white;
   background: orange;
   box-shadow: 0 0 10px -3px #dd4814 inset;
-  border:1px solid #dd4814;
+  border: 1px solid #dd4814;
 }
 
 .btn--full-width,
-.full-width{
+.full-width {
   width: 100%;
   height: 100%;
   display: block;
@@ -685,14 +855,14 @@ aside.note:before{
   margin: 1.1rem auto;
 }
 
-.full-width + p{
+.full-width + p {
   text-indent: 0 !important;
   margin-top: 1.65rem;
 }
 
 .btn a, button a, input[type="button"] a,
-.btn a:hover, button a:hover, input[type="button"] a:hover{
-  color:white;
+.btn a:hover, button a:hover, input[type="button"] a:hover {
+  color: white;
   text-decoration: none;
 }
 
@@ -707,17 +877,16 @@ aside.note:before{
 }
 
 /* ==========================================================================
-   4. General - The main styles for the the theme
+   4. General - The main styles for the theme
    ========================================================================== */
 
 .main-header {
   display: block;
   height: 100%;
   text-align: center;
-  padding: 0.825rem 0 0.825rem 0;
+  padding: 0.825rem 0;
   border-bottom: #e0e4e7 1px solid;
-  max-width:850px !important;
-  padding: relative;
+  max-width: 850px !important;
   margin: 0 auto;
   position: relative;
 }
@@ -901,6 +1070,9 @@ nav button {
   background: inherit;
   background-repeat: no-repeat;
   background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0nbWVudS1pY29uLXN2ZycgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB4bWxuczp4bGluaz0naHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluaycgeD0nMHB4JyB5PScwcHgnIHdpZHRoPScyNXB4JyBoZWlnaHQ9JzM1cHgnIHZpZXdCb3g9JzAgMCAyNSAyNScgZW5hYmxlLWJhY2tncm91bmQ9J25ldyAwIDAgMjUgMjUnIHhtbDpzcGFjZT0ncHJlc2VydmUnPjxwYXRoIGZpbGw9Im5vbmUiLz48ZyBpZD0nbWVudS1pY29uJyBmaWxsPSdvcmFuZ2UnPjxyZWN0IHdpZHRoPScyNScgaGVpZ2h0PScyJy8+PHJlY3QgeT0nNScgd2lkdGg9JzI1JyBoZWlnaHQ9JzInLz48cmVjdCB5PScxMCcgd2lkdGg9JzI1JyBoZWlnaHQ9JzInLz48L2c+PHBhdGggZmlsbD0nbm9uZScgZD0nWicgLz48cGF0aCBkPSJtMSAyMyAwLjc3IDAgMC0zLjYxYzAtMC41OC0wLjA3LTEuMzYtMC4xMS0xLjk0bDAuMDQgMCAwLjUyIDEuNDYgMS4yNyAzLjQzIDAuNDcgMCAxLjI2LTMuNDMgMC41My0xLjQ2IDAuMDQgMGMtMC4wNSAwLjU4LTAuMTEgMS4zNi0wLjExIDEuOTRsMCAzLjYxIDAuNzkgMCAwLTYuNTYtMC45OCAwLTEuMjYgMy41Mi0wLjQ2IDEuMzQtMC4wNCAwTDMuMjUgMTkuOTYgMS45OCAxNi40NCAxIDE2LjQ0IDEgMjNNOC4yNyAyM2wzLjg4IDAgMC0wLjcxLTMuMDUgMCAwLTIuMzggMi40OSAwIDAtMC43MS0yLjQ5IDAgMC0yLjA2IDIuOTUgMCAwLTAuNy0zLjc4IDAgMCA2LjU2TTEzLjU0IDIzbDAuNzkgMCAwLTMuNDNjMC0wLjY5LTAuMDYtMS4zOS0wLjExLTIuMDVsMC4wNCAwIDAuNzEgMS4zNSAyLjM4IDQuMTMgMC44NiAwIDAtNi41Ni0wLjc5IDAgMCAzLjM5YzAgMC42OSAwLjA2IDEuNDMgMC4xIDIuMDlsLTAuMDQgMC0wLjcxLTEuMzYtMi4zNy00LjEyLTAuODYgMCAwIDYuNTZNMTkuOTcgMjAuMjljMCAyLjExIDEuMDIgMi44MyAyLjM2IDIuODMgMS4zNCAwIDIuMzUtMC43MiAyLjM1LTIuODNsMC0zLjg1LTAuOCAwIDAgMy44N2MwIDEuNTgtMC42OCAyLjA4LTEuNTUgMi4wOC0wLjg2IDAtMS41My0wLjUtMS41My0yLjA4bDAtMy44Ny0wLjgzIDAgMCAzLjg1IiBmaWxsPSIjNzA4MDkwIi8+PC9zdmc+") !important;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
 }
 
 #menu-trigger:checked ~ label{
@@ -2142,6 +2314,9 @@ top: -35px;
   .author-meta li:before{
       display: none;
   }
+
+
+
 
   .kg-bookmark-icon {
     width: 16px;
