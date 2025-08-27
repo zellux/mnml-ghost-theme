@@ -25,7 +25,7 @@ It lists all posts on a dedicated /archive/ page.
                 {{#if tags}}
                 <span class="post-archive-item-tags">
                     {{#foreach tags}}
-                        <span class="post-archive-tag">{{name}}</span>
+                        <a href="{{url}}" class="post-archive-tag tag-{{slug}}">{{name}}</a>
                     {{/foreach}}
                 </span>
                 {{/if}}

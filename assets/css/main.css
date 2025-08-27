@@ -2494,3 +2494,36 @@ figure.kg-embed-card * {
     display: none !important;
   }
 }
+
+/* --- Custom Tag Colors --- */
+
+.post-archive-tag.tag-behavior { background-color: #fce8b2 !important; color: #5d4505 !important; }
+.post-archive-tag.tag-clippings { background-color: #e0e0e0 !important; color: #333 !important; }
+.post-archive-tag.tag-cognition { background-color: #d3e3fd !important; color: #1d3557 !important; }
+.post-archive-tag.tag-food-and-clothes { background-color: #fadadd !important; color: #5c272d !important; }
+.post-archive-tag.tag-hannah { background-color: #f7c5a8 !important; color: #6f4e37 !important; }
+.post-archive-tag.tag-health { background-color: #c7ceea !important; color: #3b3b6d !important; }
+.post-archive-tag.tag-journal { background-color: #e6f4ea !important; color: #285333 !important; }
+.post-archive-tag.tag-language { background-color: #b2ebf2 !important; color: #006064 !important; }
+.post-archive-tag.tag-medical { background-color: #ffcdd2 !important; color: #c62828 !important; }
+.post-archive-tag.tag-motor { background-color: #d1c4e9 !important; color: #311b92 !important; }
+.post-archive-tag.tag-plans { background-color: #cfd8dc !important; color: #263238 !important; }
+.post-archive-tag.tag-quincy { background-color: #fde2e4 !important; color: #8c3b3f !important; }
+
+/* General styling for all tags: padding, border-radius etc. */
+.post-archive-tag {
+  padding: 3px 10px;
+  border-radius: 12px;
+  margin: 0 5px 5px 0;
+  display: inline-block;
+  font-size: 0.9em;
+  text-decoration: none; /* <-- Removes the underline */
+  transition: all 0.2s ease-in-out; /* <-- Makes the hover effect smooth */
+}
+
+/* --- NEW: Hover effect for tags --- */
+.post-archive-tag:hover {
+  transform: translateY(-2px); /* Lifts the tag up slightly */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a subtle shadow for depth */
+  filter: brightness(1.05); /* Makes the color slightly brighter */
+}
