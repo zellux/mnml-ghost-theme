@@ -21,6 +21,9 @@ It lists all posts on a dedicated /archive/ page.
         <div class="post-archive-list">
             {{#foreach posts}}
             <div class="post-archive-item">
+                <time class="post-archive-item-date post-archive-date-pill" datetime="{{date published_at format="YYYY-MM-DD"}}">
+                    {{date published_at format="MMMM D, YYYY"}}
+                </time>
                 <a href="{{@site.url}}/{{slug}}/" class="post-archive-item-title">{{title}}</a>
                 {{#if tags}}
                 <span class="post-archive-item-tags">
@@ -29,9 +32,6 @@ It lists all posts on a dedicated /archive/ page.
                     {{/foreach}}
                 </span>
                 {{/if}}
-                <time class="post-archive-item-date" datetime="{{date published_at format="YYYY-MM-DD"}}">
-                    {{date published_at format="MMMM D, YYYY"}}
-                </time>
             </div>
             {{/foreach}}
         </div>

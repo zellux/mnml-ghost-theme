@@ -2527,3 +2527,15 @@ figure.kg-embed-card * {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a subtle shadow for depth */
   filter: brightness(1.05); /* Makes the color slightly brighter */
 }
+
+/* --- Styling for the Compact Date Pill --- */
+.post-archive-date-pill {
+  background-color: #f5f5f5; /* Light grey background */
+  border: 1px solid #eee;   /* Very light border */
+  color: #555;              /* Dark grey text */
+  padding: 3px 12px;        /* Vertical and horizontal space inside */
+  border-radius: 15px;      /* Fully rounded corners for the "pill" shape */
+  font-size: 0.85em;        /* Make font slightly smaller */
+  margin-right: 15px;       /* Space between date and title */
+  white-space: nowrap;      /* Prevent the date from breaking into two lines */
+}
