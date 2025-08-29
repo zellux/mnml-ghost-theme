@@ -2539,3 +2539,16 @@ figure.kg-embed-card * {
   margin-right: 15px;       /* Space between date and title */
   white-space: nowrap;      /* Prevent the date from breaking into two lines */
 }
+
+/* Feature image */
+.post-feature-image {
+  margin: 30px 0; /* Adds space above and below the image */
+  padding: 0;
+  text-align: center; /* Centers the image if it's not full-width */
+}
+
+.post-feature-image img {
+  max-width: 100%; /* Ensures the image is never wider than its container */
+  height: auto;   /* Maintains the aspect ratio */
+  border-radius: 5px; /* Optional: adds slightly rounded corners */
+}
