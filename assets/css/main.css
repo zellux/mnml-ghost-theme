@@ -2153,7 +2153,19 @@ figure.kg-embed-card * {
     display: block;
   }
 
-  .post-thumbnail,
+  .post-thumbnail {
+    display: block;
+    float: none;
+    max-width: 100%;
+    margin: 1.65rem 0 1.65rem 0;
+    text-align: center;
+  }
+  
+  .post-thumbnail img {
+    max-width: 100%;
+    height: auto;
+  }
+  
   .copyright-notice {
     display: none;
   }
@@ -2365,6 +2377,14 @@ figure.kg-embed-card * {
 
   .post-content img {
     padding: 0;
+  }
+  
+  .post-thumbnail {
+    margin: 0 0 1.1rem 0;
+  }
+  
+  .post-thumbnail img {
+    border-radius: 4px;
   }
 
   .post-content .full-img {
