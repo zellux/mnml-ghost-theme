@@ -2348,11 +2348,15 @@ figure.kg-embed-card * {
   }
 
   .post-template .post-tags {
-    display: block;
+    display: inline;
   }
 
   .post-template .post-tags:before {
     display: none;
+  }
+
+  .post-template .post-edit {
+    display: inline;
   }
 
   hr {
